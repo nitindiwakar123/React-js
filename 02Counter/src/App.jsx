@@ -1,5 +1,6 @@
 import React from "react"
 import { useState } from "react";
+import './App.css'
 
 function App() {
 
@@ -8,14 +9,24 @@ function App() {
   // let counter = 0;
 
   const addValue = () => {
+    if(counter < 20){
     counter = counter + 1;
+    }
+    else {
+      counter = 20;
+    }
     setCounter(counter);
     console.log("Added!");
 
   }
 
   const subtractValue = () => {
+    if(counter > 0){
     counter = counter - 1;
+    }
+    else {
+      counter = 0;
+    }
     setCounter(counter);
     console.log("Subtracted");
 
