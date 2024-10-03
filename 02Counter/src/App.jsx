@@ -4,30 +4,27 @@ import './App.css'
 
 function App() {
 
-  let [counter, setCounter] = useState(0);
+  const [counter, setCounter] = useState(0);
 
   // let counter = 0;
 
   const addValue = () => {
-    if(counter < 20){
-    counter = counter + 1;
-    }
-    else {
-      counter = 20;
-    }
-    setCounter(counter);
-    console.log("Added!");
+   
+    setCounter(prevCounter => prevCounter + 1 );
+    setCounter(prevCounter => prevCounter + 1 );
+    setCounter(prevCounter => prevCounter + 1 );
+    setCounter(prevCounter => prevCounter + 1 );
+    console.log(counter);
+    
 
   }
 
   const subtractValue = () => {
-    if(counter > 0){
-    counter = counter - 1;
-    }
-    else {
-      counter = 0;
-    }
-    setCounter(counter);
+   
+    setCounter(prevCounter => prevCounter - 1 );
+    setCounter(prevCounter => prevCounter - 1 );
+    setCounter(prevCounter => prevCounter - 1 );
+    setCounter(prevCounter => prevCounter - 1 );
     console.log("Subtracted");
 
   }
