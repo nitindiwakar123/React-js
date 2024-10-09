@@ -1,15 +1,16 @@
-import { useState } from 'react';
-import './App.css'
-import Heading from './components/Heading.jsx';
+import Child1 from "./components/Child1"
+import Parent from "./components/Parent"
+import UserContextProvider from "./contexts/userContextProvider"
+
 
 function App() {
-  
 
   return (
-    <>
-    <Heading name="Nitin" />
-    </>
-  )
+  <UserContextProvider>
+    <Parent />
+    <Child1 />
+  </UserContextProvider>
+    )
 }
 
 export default App
