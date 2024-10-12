@@ -21,6 +21,9 @@ function App() {
     document.querySelector('html').classList.add(themeMode);
   }, [themeMode]);
 
+  console.log("themeMode: ", themeMode);
+  
+
   return (
     <ThemeProvider value={{themeMode, lightTheme, darkTheme}}>
 

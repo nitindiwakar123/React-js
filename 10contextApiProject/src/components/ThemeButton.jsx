@@ -14,6 +14,9 @@ export default function ThemeBtn() {
         }
     }
 
+    console.log("Context Thememode: ", themeMode);
+    
+
     return (
         <label className="relative inline-flex items-center cursor-pointer">
             <input
